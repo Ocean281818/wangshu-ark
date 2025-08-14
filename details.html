@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>展示详情 - 小车与机械臂</title>
+	<link rel="stylesheet" href="./assets/styles.css" />
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24'></text></svg>">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="./index.html" aria-label="返回首页"></a>
+			<nav class="nav" aria-label="主导航">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">菜单</button>
+				<ul id="nav-list" class="nav-list">
+					<li><a href="#vehicle">整车详情</a></li>
+					<li><a href="#spec-arm">机械臂</a></li>
+					<li><a href="#spec-lidar">激光雷达</a></li>
+					<li><a href="#spec-depth">深度相机</a></li>
+					<li><a href="#spec-chassis">履带底盘</a></li>
+					<li><a href="./index.html" aria-label="返回首页">
+						<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path fill="currentColor" d="M15.5 5l-7 7 7 7V5z"/></svg>返回首页
+					</a></li>
+				</ul>
+			</nav>
+			<div class="actions"></div>
+		</div>
+	</header>
+
+	<main>
+		<section id="vehicle" class="hero hero-light" aria-label="整车详情">
+			<div class="container hero-inner">
+				<h1 class="hero-title">整车详情</h1>
+				<p class="hero-subtitle">底盘、雷达、相机与机械臂</p>
+				<div class="hero-media">
+					<img src="./Images/小车图片.png" alt="小车整车图片" />
+				</div>
+				<!-- 四卡片栅格：机械臂/雷达/深度相机/底盘 -->
+				<div class="feature-cards full-bleed">
+					
+					<article class="feature-card">
+						<div class="feature-media"><img src="./Images/激光雷达.png" alt="激光雷达" loading="lazy" decoding="async" /></div>
+						<h3>激光雷达</h3>
+					</article>
+					<article class="feature-card">
+						<div class="feature-media"><img src="./Images/深度相机.png" alt="深度相机" loading="lazy" decoding="async" /></div>
+						<h3>深度相机</h3>
+					</article>
+					<article class="feature-card">
+						<div class="feature-media"><img src="./Images/底盘.png" alt="履带底盘" loading="lazy" decoding="async" /></div>
+						<h3>履带底盘</h3>
+					</article>
+					<article class="feature-card">
+						<div class="feature-media"><img src="./Images/机械臂.png" alt="机械臂" loading="lazy" decoding="async" /></div>
+						<h3>机械臂</h3>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-spacer" aria-hidden="true"></section>
+
+		<!-- 规格展示：机械臂 -->
+		<section id="spec-arm" class="spec-section" aria-label="机械臂规格">
+			<div class="container spec-grid">
+				<div class="spec-list" role="list">
+					<div class="spec-item" role="listitem"><div class="spec-value">6 DOF</div><div class="spec-label">自由度</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">谐波</div><div class="spec-label">减速方式</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">碳纤维+铝合金</div><div class="spec-label">主要材质</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">压力传感</div><div class="spec-label">末端能力</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">±0.02mm</div><div class="spec-label">重复定位精度</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">1.0 kg</div><div class="spec-label">额定负载</div></div>
+				</div>
+				<div class="spec-media">
+					<img src="./Images/机械臂.png" alt="机械臂渲染图" />
+				</div>
+			</div>
+		</section>
+
+		<!-- 规格展示：激光雷达（参考 Unitree L1 样式与参数项） -->
+		<section id="spec-lidar" class="spec-section" aria-label="激光雷达规格">
+			<div class="container spec-grid">
+				<div class="spec-list" role="list">
+					<div class="spec-item" role="listitem"><div class="spec-value">360°×90°</div><div class="spec-label">超广角扫描</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">0.05 m</div><div class="spec-label">近处盲区</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">30 m</div><div class="spec-label">@90% 反射率</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">21600 点/秒</div><div class="spec-label">有效频率</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">内置 IMU</div><div class="spec-label">惯性单元</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">75×75×65 mm</div><div class="spec-label">尺寸</div></div>
+				</div>
+				<div class="spec-media">
+					<img src="./Images/激光雷达.png" alt="激光雷达" />
+				</div>
+			</div>
+		</section>
+
+		<!-- 规格展示：深度相机 -->
+		<section id="spec-depth" class="spec-section" aria-label="深度相机规格">
+			<div class="container spec-grid">
+				<div class="spec-list" role="list">
+					<div class="spec-item" role="listitem"><div class="spec-value">D435</div><div class="spec-label">型号</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">RGB‑D</div><div class="spec-label">成像类型</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">约 87°×58°</div><div class="spec-label">视场角</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">1280×720</div><div class="spec-label">深度分辨率</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">最高90 FPS</div><div class="spec-label">帧率</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">0.2–10 m</div><div class="spec-label">工作范围</div></div>
+				</div>
+				<div class="spec-media">
+					<img src="./Images/深度相机.png" alt="深度相机" />
+				</div>
+			</div>
+		</section>
+
+		<!-- 规格展示：履带底盘 -->
+		<section id="spec-chassis" class="spec-section" aria-label="履带底盘规格">
+			<div class="container spec-grid">
+				<div class="spec-list" role="list">
+					<div class="spec-item" role="listitem"><div class="spec-value">TS200</div><div class="spec-label">底盘型号</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">2.7 kg</div><div class="spec-label">自重</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">8–10 kg</div><div class="spec-label">典型负载</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">325×250×90 mm</div><div class="spec-label">长宽高</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">铝+钛合金</div><div class="spec-label">材质</div></div>
+					<div class="spec-item" role="listitem"><div class="spec-value">履带宽 45 mm</div><div class="spec-label">履带规格</div></div>
+				</div>
+				<div class="spec-media">
+					<img src="./Images/底盘.png" alt="履带底盘" />
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="legal">
+				<p>© 望舒方舟-官方网站</p>
+				<ul class="legal-links">
+					<li><a href="./index.html" aria-label="返回首页">
+						<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path fill="currentColor" d="M15.5 5l-7 7 7 7V5z"/></svg>返回首页
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./assets/main.js"></script>
+</body>
+</html>

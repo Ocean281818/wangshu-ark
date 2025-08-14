@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>望舒方舟-官方网站</title>
+	<meta name="description" content="仿照 apple.com.cn 的结构与布局，仅为占位框架，便于后续替换真实文案与素材" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./assets/styles.css" />
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24'></text></svg>">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="#" aria-label="Apple 样式品牌"></a>
+			<nav class="nav" aria-label="主导航">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="打开主菜单">菜单</button>
+				<ul id="nav-list" class="nav-list">
+					<li><a href="#video">视频展示</a></li>
+					<li><a href="#vehicle">小车展示</a></li>
+					<li><a href="#unity">unity拟真</a></li>
+					<li><a href="#docs">文档下载</a></li>
+					<li><a href="#contact">联系我们</a></li>
+				</ul>
+			</nav>
+			<div class="actions" aria-label="辅助操作">
+				<button class="icon-btn" aria-label="搜索">
+					<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+				</button>
+				<button class="icon-btn" aria-label="购物袋">
+					<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6 7h12l-1 12H7L6 7zm3-2a3 3 0 0 1 6 0h-2a1 1 0 0 0-2 0H9z"/></svg>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main><section class="notice-bar" aria-label="站点公告">
+		<div class="container">
+			<p>网站内容仅作可视化展示和参考，具体的实际内容以word为主。<a class="btn link" href="#docs">详细了解请查看文档</a></p>
+		</div>
+	</section>
+		<section id="video" class="hero-video" aria-label="项目视频">
+			<div class="container">
+				<h1 class="hero-title">整体视频展示</h1>
+				<p class="hero-subtitle">来认识一下 望舒方舟 整体流程</p>
+				<div class="hero-video-blend">
+					<video class="hero-video-el" src="./Images/502素材收录压缩_副本.mp4" controls preload="metadata" playsinline></video>
+				</div>
+			</div>
+		</section>
+		<section id="vehicle" class="hero hero-sky" aria-label="整车概览">
+			<div class="container hero-inner">
+				<h1 class="hero-title">小车整车展示</h1>
+				<p class="hero-subtitle">小车的详细配置以及各类传感器硬件信息</p>
+				<div class="hero-cta">
+					<a class="btn cta" href="./details.html#vehicle">进一步了解</a>
+				</div>
+				<div class="hero-media full-bleed">
+					<img src="./Images/小车图片.png" alt="小车整车图片" loading="eager" decoding="async" />
+				</div>
+			</div>
+		</section>
+
+
+		<section id="unity" class="hero hero-stars" aria-label="Unity 仿真展示">
+			<div class="container hero-inner">
+				<h2 class="hero-title">Unity仿真展示</h2>
+				<p class="hero-subtitle">仿真场景、拟真游戏、当下热门的强化学习</p>
+				<div class="hero-cta">
+					<a class="btn cta" href="./unity.html" target="_blank" rel="noopener">进一步了解</a>
+				</div>
+				<div class="hero-media full-bleed">
+					<img src="./Images/Unity仿真图.png" alt="Unity 仿真场景封面" loading="lazy" decoding="async" />
+				</div>
+			</div>
+		</section>
+
+		<section id="sensors" class="promo-grid container" aria-label="传感器">
+			<article class="promo-card promo-dark">
+				<h3>激光雷达</h3>
+				<p>环境建图 / 障碍检测</p>
+				<div class="card-cta">
+					<a class="btn link" href="#docs">参数文档</a>
+					<a class="btn link" href="#videos">演示视频</a>
+				</div>
+			</article>
+			<article class="promo-card promo-light">
+				<h3>深度相机</h3>
+				<p>RGB-D 感知 / 手眼标定</p>
+				<div class="card-cta">
+					<a class="btn link" href="#docs">参数文档</a>
+					<a class="btn link" href="#videos">演示视频</a>
+				</div>
+			</article>
+			<article class="promo-card promo-image">
+				<h3>IMU</h3>
+				<p>姿态估计 / 惯性导航</p>
+				<div class="card-cta">
+					<a class="btn link" href="#docs">参数文档</a>
+					<a class="btn link" href="#videos">演示视频</a>
+				</div>
+			</article>
+			<article class="promo-card promo-dark">
+				<h3>其他配件</h3>
+				<p>电池、底盘驱动、通信模块等</p>
+				<div class="card-cta">
+					<a class="btn link" href="#docs">查看清单</a>
+				</div>
+			</article>
+			<article class="promo-card promo-light" id="blueprints">
+				<h3>设计图纸</h3>
+				<p>机械结构与电气接线图、一键打包下载</p>
+				<div class="card-cta">
+					<a class="btn link" href="#docs">图纸清单</a>
+					<a class="btn link" href="#docs">下载</a>
+				</div>
+			</article>
+		</section>
+
+
+		<section id="videos" class="video-section" aria-label="视频展示">
+			<div class="container">
+				<div class="video-placeholder">
+					<p>视频展示区（待提供素材：整车巡航、机械臂取放、传感器可视化）</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="docs" class="docs-section" aria-label="文档下载">
+			<div class="container">
+				<h2 class="section-title">文档与下载中心</h2>
+				<div class="docs-list">
+					<article class="doc-card">
+						<div class="doc-meta">
+							<h3 class="doc-title">望舒方舟 项目介绍</h3>
+							<p class="doc-desc">项目总体方案（Word 文档）</p>
+						</div>
+						<div class="doc-actions">
+							<a class="btn cta" href="./望舒方舟08131321.docx" download>下载</a>
+							<a class="btn cta" href="./望舒方舟08131321.docx" target="_blank" rel="noopener">查看</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="contact" class="contact-section" aria-label="联系我们">
+			<div class="container">
+				<p>联系方式与二维码</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footnotes">
+				<p>Δ 此页面为学习与演示用途的视觉框架，非 Apple 官方页面。文案为占位符，后续可替换。</p>
+			</div>
+			<nav class="footer-nav">
+				<div class="footer-col">
+					<h4>选购及了解</h4>
+					<ul>
+						<li><a href="#">商店</a></li>
+						<li><a href="#">Mac</a></li>
+						<li><a href="#">iPad</a></li>
+						<li><a href="#">iPhone</a></li>
+						<li><a href="#">Watch</a></li>
+						<li><a href="#">配件</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Apple Store 商店</h4>
+					<ul>
+						<li><a href="#">查找零售店</a></li>
+						<li><a href="#">Genius Bar 天才吧</a></li>
+						<li><a href="#">Today at Apple</a></li>
+						<li><a href="#">认证的翻新产品</a></li>
+						<li><a href="#">分期付款</a></li>
+						<li><a href="#">订单状态</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>账户</h4>
+					<ul>
+						<li><a href="#">管理你的 Apple 账户</a></li>
+						<li><a href="#">Apple Store 账户</a></li>
+						<li><a href="#">iCloud.com</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>关于 Apple</h4>
+					<ul>
+						<li><a href="#">Newsroom</a></li>
+						<li><a href="#">工作机会</a></li>
+						<li><a href="#">活动</a></li>
+						<li><a href="#">联系 Apple</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="legal">
+				<p>© 望舒方舟-官方网站</p>
+				<ul class="legal-links">
+					<li><a href="#">隐私政策</a></li>
+					<li><a href="#">使用条款</a></li>
+					<li><a href="#">法律信息</a></li>
+					<li><a href="#">网站地图</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- 添加 ES6 模块支持的 import map -->
+	<script src="./assets/main.js"></script>
+</body>
+</html>
